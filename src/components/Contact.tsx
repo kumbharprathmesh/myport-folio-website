@@ -80,7 +80,7 @@ export default function Contact() {
               <div className="flex items-center gap-4">
                  {/* EDIT HERE: Your Social Links */}
                  <SocialLink href="https://github.com/kumbharprathmesh" icon={<GithubIcon />} label="GitHub" />
-                 <SocialLink href="https://linkedin.com/in/" icon={<LinkedinIcon />} label="LinkedIn" />
+                 <SocialLink href="https://www.linkedin.com/in/prathmesh-kumbhar-954b69300?utm_source=share_via&utm_content=profile&utm_medium=member_android" icon={<LinkedinIcon />} label="LinkedIn" />
                  <SocialLink href="https://twitter.com/" icon={<TwitterIcon />} label="Twitter" />
               </div>
             </div>
