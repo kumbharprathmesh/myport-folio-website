@@ -6,131 +6,37 @@ import { useState } from "react";
 // Project Data with Media & Layout Configuration
 const projects = [
   {
-    id: "elite-hotel",
-    title: "Elite Hotel",
-    category: "Full Stack • Microservices",
-    description: "Scalable hotel management system with 5+ Node.js services.",
-    longDescription: "A comprehensive Microservices-based Hotel Management System designed to streamline reservations, billing, and housekeeping. Built with a focus on scalability and service isolation.",
-    techStack: ["Node.js", "Docker", "Kubernetes", "Redis", "RabbitMQ", "Next.js"],
-    repo: "https://github.com/fawazv/Elite-hotel",
+    id: "project-1",
+    title: "3d animated website",
+    category: "Frontend • Animation",
+    description: "An interactive, fully animated 3D website built with modern tools.",
+    longDescription: "A highly immersive 3D animated web experience designed to showcase advanced front-end skills. Leverages smooth scrolling, complex transitions, and dynamic components.",
+    techStack: ["React", "Next.js", "Framer Motion", "Tailwind CSS"],
+    repo: "https://github.com/kumbharprathmesh/animated-website",
     demo: "#",
     color: "from-blue-600/20 to-cyan-500/20",
     hoverColor: "group-hover:from-blue-600/40 group-hover:to-cyan-500/40",
     span: "md:col-span-2 md:row-span-2",
     mediaType: "image",
-    // Abstract Network/Server for Grid
     mediaUrl: "https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    // Code/Structure Demo for Modal
     demoUrl: "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
-    id: "nxtcart",
-    title: "Nxtcart",
-    category: "E-Commerce",
-    description: "Modern shopping platform with automated workflows.",
-    longDescription: "A modern e-commerce application featuring secure authentication, payment processing with Stripe/PayPal, and a robust admin dashboard for product management.",
-    techStack: ["Next.js", "TypeScript", "Stripe", "MongoDB", "Shadcn UI"],
-    repo: "https://github.com/fawazv/nxt-cart",
+    id: "project-2",
+    title: "3d animated website",
+    category: "Web Development",
+    description: "Another iteration of my 3D animated website experience.",
+    longDescription: "A second variation focusing on creative design and performance optimization. Built to experiment with deep animations and immersive web storytelling.",
+    techStack: ["React", "Three.js", "GSAP"],
+    repo: "https://github.com/kumbharprathmesh/3d-portfolio",
     demo: "#",
     color: "from-purple-600/20 to-pink-500/20",
     hoverColor: "group-hover:from-purple-600/40 group-hover:to-pink-500/40",
     span: "md:col-span-1 md:row-span-2",
     mediaType: "image",
-    // Shopping/Ecommerce Concept
     mediaUrl: "https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    // Shopping Interaction
     demoUrl: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },
-  {
-    id: "dropbox-clone",
-    title: "Dropbox Clone",
-    category: "Cloud Storage",
-    description: "Secure file storage with drag-and-drop & metadata.",
-    longDescription: "A functional clone of Dropbox allowing users to upload, organize, and manage files in the cloud. Features real-time updates and secure authentication.",
-    techStack: ["React", "Firebase", "Tailwind CSS"],
-    repo: "https://github.com/fawazv/dropbox-clone",
-    demo: "#",
-    color: "from-orange-500/20 to-red-500/20",
-    hoverColor: "group-hover:from-orange-500/40 group-hover:to-red-500/40",
-    span: "md:col-span-1 md:row-span-1",
-    mediaType: "image",
-    // Cloud/Data Abstract
-    mediaUrl: "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    // File Management
-    demoUrl: "https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },
-  {
-    id: "blog-microservices",
-    title: "Blog Platform",
-    category: "Microservices",
-    description: "Event-driven architecture with RabbitMQ.",
-    longDescription: "Built User, Post, and Comment services with API Gateway and RabbitMQ communication. Containerized with Docker Compose and automated pipeline via GitHub Actions.",
-    techStack: ["Node.js", "RabbitMQ", "Docker"],
-    repo: "https://github.com/fawazv/blog-microservice",
-    demo: "#",
-    color: "from-green-600/20 to-teal-500/20",
-    hoverColor: "group-hover:from-green-600/40 group-hover:to-teal-500/40",
-    span: "md:col-span-1 md:row-span-1",
-    mediaType: "image",
-    // Typing/Code Abstract
-    mediaUrl: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    // Server/Terminal
-    demoUrl: "https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },
-  {
-    id: "bookstore-app",
-    title: "Bookstore",
-    category: "MERN Stack",
-    description: "Book management with separate Frontend/Backend.",
-    longDescription: "Built RESTful APIs with Express.js and MongoDB for complete book management (CRUD). Developed a responsive React frontend integrated with Axios.",
-    techStack: ["MongoDB", "Express", "React"],
-    repo: "https://github.com/fawazv/bookstoreapp",
-    demo: "#",
-    color: "from-indigo-600/20 to-purple-500/20",
-    hoverColor: "group-hover:from-indigo-600/40 group-hover:to-purple-500/40",
-    span: "md:col-span-1 md:row-span-1",
-    mediaType: "image",
-    // Reading/Books
-    mediaUrl: "https://images.pexels.com/photos/207636/pexels-photo-207636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    // Library/Shelf
-    demoUrl: "https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },
-  {
-    id: "pixabay-gallery",
-    title: "Pixabay Gallery",
-    category: "API Integration",
-    description: "Image search gallery using Pixabay API.",
-    longDescription: "Implemented image search and responsive grid gallery using React, Tailwind CSS, and Axios. Integrated Pixabay API for fetching images.",
-    techStack: ["React", "Vite", "Tailwind"],
-    repo: "https://github.com/fawazv/1.-react-tailwind-pixabay-gallery",
-    demo: "#",
-    color: "from-pink-600/20 to-rose-500/20",
-    hoverColor: "group-hover:from-pink-600/40 group-hover:to-rose-500/40",
-    span: "md:col-span-1 md:row-span-1",
-    mediaType: "image",
-    // Color/Art
-    mediaUrl: "https://images.pexels.com/photos/1616403/pexels-photo-1616403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    // Searching/Scanning
-    demoUrl: "https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },
-  {
-    id: "room-upload",
-    title: "Room Upload",
-    category: "Cloudinary",
-    description: "Secure image upload service details.",
-    longDescription: "Built secure image upload flow using Express, Multer, and Cloudinary SDK with TypeScript backend. Developed responsive React + Vite frontend.",
-    techStack: ["React", "Multer", "Cloudinary"],
-    repo: "https://github.com/fawazv/multer-cloudinary",
-    demo: "#",
-    color: "from-yellow-600/20 to-orange-500/20",
-    hoverColor: "group-hover:from-yellow-600/40 group-hover:to-orange-500/40",
-    span: "md:col-span-1 md:row-span-1",
-    mediaType: "image",
-    // Data Transfer
-    mediaUrl: "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    // Upload/Processing
-    demoUrl: "https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-  },
+  }
 ];
 
 const INITIAL_VISIBLE_COUNT = 5;

@@ -5,33 +5,26 @@ import { useRef } from "react";
 
 const TIMELINE_DATA = [
   {
-    year: "2024 - Present",
-    title: "Full Stack Developer",
-    org: "Freelance & Open Source",
-    description: "Architecting enterprise-scale applications like 'Elite Hotel' (Microservices) and 'Nxtcart' (E-commerce). Expertise in Next.js, Docker, Kubernetes, and Cloud Architecture.",
+    year: "Present",
+    title: "Learning & Building",
+    org: "Self-Taught Journey",
+    description: "Actively learning new skills and pushing the boundaries of web development by building immersive 3D animated websites.",
     type: "work",
   },
   {
-    year: "2023",
-    title: "The Pivot to Tech",
-    org: "Self-Taught Journey",
-    description: "Graduated with a Bachelor of Commerce but discovered a passion for problem-solving. Dedicated 1000+ hours to mastering the MERN stack and software engineering fundamentals.",
+    year: "Ongoing",
+    title: "Technical Foundation",
+    org: "Core Skills",
+    description: "Mastered core programming languages including Python, C, and Java. Deeply focused on expanding my capabilities in full-stack web development.",
     type: "milestone",
   },
   {
-    year: "2020 - 2023",
-    title: "Bachelor of Commerce",
-    org: "Calicut University",
-    description: "Graduated with a specialization in Co-operation. Developed a strong analytical mindset and understanding of business logic.",
+    year: "Education",
+    title: "Tier 3 College",
+    org: "Undergraduate Studies",
+    description: "I am from a tier 3 college, constantly proving that skills and dedication outweigh the name of the institution. Dedicated to continuous learning.",
     type: "education",
-  },
-  {
-    year: "2018 - 2020",
-    title: "Computer Applications",
-    org: "GHSS Tirurangadi",
-    description: "Higher Secondary in Commerce with Computer Applications. Early exposure to programming concepts which sparked my initial interest in tech.",
-    type: "education",
-  },
+  }
 ];
 
 export default function Timeline() {

@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  { category: "Frontend", items: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Redux"] },
-  { category: "Backend", items: ["Node.js", "Express", "Microservices", "PostgreSQL", "MongoDB", "RabbitMQ"] },
-  { category: "DevOps & Cloud", items: ["Docker", "Kubernetes", "AWS EC2", "AWS S3", "CI/CD", "Nginx"] },
+  { category: "Frontend Design", items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "UI/UX"] },
+  { category: "AI Expertise", items: ["Python", "Machine Learning", "Data Analysis", "Prompt Engineering"] },
+  { category: "Core Languages", items: ["C", "C++", "Java", "Web Development"] },
 ];
 
 export default function Skills() {
@@ -25,10 +25,10 @@ export default function Skills() {
           className="mb-16"
         >
           <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-            Technical <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-400">Arsenal</span>
+            Technical <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-400">Toolkit</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl leading-relaxed">
-            A comprehensive stack enabling end-to-end development of scalable applications.
+            Focused heavily on crafting beautiful web experiences and engineering intelligent AI features.
           </p>
         </motion.div>
 

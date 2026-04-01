@@ -69,28 +69,21 @@ export default function Contact() {
             </p>
 
             <div className="flex flex-col gap-6 mb-12">
-              <a href="mailto:fawazv.business@gmail.com" className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors group">
+              {/* EDIT HERE: Your Email Address */}
+              <a href="mailto:prathmeshkumbhar112@gmail.com" className="flex items-center gap-4 text-gray-300 hover:text-white transition-colors group">
                 <div className="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-white/10 transition-colors">
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                 </div>
-                <span className="text-lg">fawazv.business@gmail.com</span>
+                <span className="text-lg">prathmeshkumbhar112@gmail.com</span>
               </a>
               
               <div className="flex items-center gap-4">
-                 <SocialLink href="https://github.com/fawaz-v" icon={<GithubIcon />} label="GitHub" />
+                 {/* EDIT HERE: Your Social Links */}
+                 <SocialLink href="https://github.com/kumbharprathmesh" icon={<GithubIcon />} label="GitHub" />
                  <SocialLink href="https://linkedin.com/in/" icon={<LinkedinIcon />} label="LinkedIn" />
                  <SocialLink href="https://twitter.com/" icon={<TwitterIcon />} label="Twitter" />
               </div>
             </div>
-
-            <a 
-              href="/resume.pdf" 
-              download 
-              className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black rounded-full font-bold hover:bg-gray-200 transition-colors transform hover:-translate-y-1"
-            >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-              Download Resume
-            </a>
           </motion.div>
 
           {/* Right Column: Form */}
@@ -159,7 +152,7 @@ export default function Contact() {
         </div>
 
         <footer className="mt-24 pt-8 border-t border-white/5 text-center text-gray-500 font-mono text-sm">
-           <p>&copy; {new Date().getFullYear()} Mohammed Fawaz. All rights reserved.</p>
+           <p>&copy; {new Date().getFullYear()} Prathmesh. All rights reserved.</p>
         </footer>
       </div>
     </section>
